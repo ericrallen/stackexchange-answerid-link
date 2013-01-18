@@ -1,0 +1,22 @@
+{
+  "name": "StackOverflow URL w/ Comment ID",
+  "version": "0.1",
+  "description": "Copy the URL of a StackOverflow comment with the hash for the comment's HTML ID appended",
+  "icons": { 
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  },
+  "background": {
+    "scripts": ["lib/copy.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*.stackoverflow.com/*", "http://*.stackexchange.com/*"],
+      "js": ["lib/jquery.min.js", "lib/functions.js"],
+      "css": ["lib/style.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [ "clipboardRead", "clipboardWrite", "http://stackoverflow.com/*" ],
+  "manifest_version": 2
+}
