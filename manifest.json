@@ -1,10 +1,11 @@
 {
-  "name": "StackOverflow URL w/ Comment ID",
-  "version": "0.1",
-  "description": "Copy the URL of a StackOverflow comment with the hash for the comment's HTML ID appended",
-  "icons": { 
+  "name": "Copy Stack Exchange URL w/ Answer ID",
+  "version": "1.0.1",
+  "description": "Copy the URL of a StackOverflow answer with the hash for the comment's HTML ID appended",
+  "icons": {
     "16": "icons/icon16.png",
-    "48": "icons/icon48.png"
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
   "background": {
     "scripts": ["lib/copy.js"]
@@ -17,6 +18,6 @@
       "run_at": "document_end"
     }
   ],
-  "permissions": [ "clipboardRead", "clipboardWrite", "http://stackoverflow.com/*" ],
+  "permissions": [ "clipboardRead", "clipboardWrite", "http://stackoverflow.com/*", "http://*.stackexchange.com/*" ],
   "manifest_version": 2
 }
