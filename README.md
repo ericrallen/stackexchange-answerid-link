@@ -3,6 +3,8 @@ stackexchange-answerid-link
 
 A Google Chrome extension that allows you to copy a direct link to an Answer on any StackExchange site
 
+Now available in the [Chrome Web Store](https://chrome.google.com/webstore/detail/copy-stack-exchange-url-w/pdnbneamjemojcmdkdgacepegbnjoamg).
+
 Usage
 =====
 
